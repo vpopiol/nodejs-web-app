@@ -1,0 +1,9 @@
+version: 0.2
+
+run-as: Linux-user-name
+
+phases:
+  build:
+    on-failure: ABORT
+    commands:
+      - docker build --build-arg ARCH=arm64v8 -t vpopiol/node-web-app:arm .
