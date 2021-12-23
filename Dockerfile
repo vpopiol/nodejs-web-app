@@ -1,5 +1,5 @@
 ARG ARCH=
-FROM node:current-alpine3.12
+FROM public.ecr.aws/docker/library/node:latest
 
 # Create app directory
 WORKDIR /usr/src/app
