@@ -1,5 +1,5 @@
 ARG ARCH=
-FROM node:current-alpine3.12
+FROM ${ARCH}/node:current-alpine3.12
 
 # Create app directory
 WORKDIR /usr/src/app
