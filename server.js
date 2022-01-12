@@ -10,7 +10,15 @@ const HOST = '0.0.0.0';
 // App
 const app = express();
 app.get('/', (req, res) => {
-  res.send(`***Hello World! Happy to see you! Running on ${os.arch()}\n`);
+  res.send(`***Hello World! You used this URL: ${req.originalUrl} Running on ${os.arch()}\n`);
+});
+
+app.get('/ecr/svc-x86', (req, res) => {
+  res.send(`***Hello World! You used this URL: ${req.originalUrl} Running on ${os.arch()}\n`);
+});
+
+app.get('/ecr/svc-arm', (req, res) => {
+  res.send(`***Hello World! You used this URL: ${req.originalUrl} Running on ${os.arch()}\n`);
 });
 
 app.listen(PORT, HOST);
