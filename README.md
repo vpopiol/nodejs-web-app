@@ -28,5 +28,5 @@ To build an image for arm, we can use the CodeBuild image ``amazonlinux2-aarch64
 
 The CodeBuild project that builds and pushes the manifest can run in any amazonlinux container, regardless of architecture.
 
-This [repo](..nodejs-web-app-infra) has a cdk project that builds a CodePipeline and CodeBuild projects to build the docker images for x86 and arm and the docker manifest pushing them old to ECR
+This [repo](nodejs-web-app-infra) has a cdk project that builds a CodePipeline and CodeBuild projects to build the docker images for x86 and arm and the docker manifest pushing them old to ECR
 
